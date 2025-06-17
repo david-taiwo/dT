@@ -1,3 +1,192 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Prevent horizontal scroll on mobile */
+  html, body {
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  /* Enhanced Button Components - Mobile friendly */
+  .btn-primary {
+    @apply bg-accent-blue hover:bg-accent-blue-hover text-white 
+           px-4 py-2 sm:px-6 sm:py-3 
+           text-sm sm:text-base font-medium
+           rounded-lg transition-colors duration-200
+           touch-manipulation font-sans;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-accent-blue text-accent-blue 
+           hover:bg-accent-blue hover:text-white 
+           px-4 py-2 sm:px-6 sm:py-3 
+           text-sm sm:text-base font-medium
+           rounded-lg transition-all duration-200
+           touch-manipulation font-sans;
+  }
+  
+  .btn-accent {
+    @apply bg-accent-purple hover:bg-accent-purple-hover text-white 
+           px-4 py-2 sm:px-6 sm:py-3 
+           text-sm sm:text-base font-medium
+           rounded-lg transition-colors duration-200
+           touch-manipulation font-sans;
+  }
+  
+  /* Enhanced Card Components - Responsive */
+  .card {
+    @apply bg-surface-card border border-surface-border rounded-lg 
+           p-4 sm:p-6 shadow-lg;
+  }
+  
+  .card-hover {
+    @apply card hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  /* Enhanced Text Components - Responsive */
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-blue to-accent-purple 
+           bg-clip-text text-transparent font-bold;
+  }
+  
+  .heading-primary {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl 
+           font-bold text-primary-text leading-tight font-sans;
+  }
+  
+  .heading-secondary {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+           font-semibold text-primary-text leading-tight font-sans;
+  }
+  
+  .heading-tertiary {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl 
+           font-semibold text-primary-text font-sans;
+  }
+  
+  .text-muted {
+    @apply text-primary-muted text-sm sm:text-base font-sans;
+  }
+  
+  .text-mono {
+    @apply font-mono;
+  }
+  
+  /* Enhanced Section Components - Fully Responsive */
+  .section-padding {
+    @apply py-12 sm:py-16 md:py-20 lg:py-24 
+           px-4 sm:px-6 md:px-8 lg:px-12;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto w-full;
+  }
+  
+  /* Grid Systems - Responsive */
+  .grid-responsive-2 {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8;
+  }
+  
+  .grid-responsive-3 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8;
+  }
+  
+  .grid-responsive-4 {
+    @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6;
+  }
+  
+  /* Flex utilities - Responsive */
+  .flex-responsive-center {
+    @apply flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6;
+  }
+  
+  .flex-responsive-between {
+    @apply flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Mobile-first responsive utilities */
+  .mobile-center {
+    @apply text-center sm:text-left;
+  }
+  
+  .mobile-full {
+    @apply w-full sm:w-auto;
+  }
+}
+
+@layer components {
+  /* Hero specific styles */
+  .hero-image-container {
+    @apply relative overflow-hidden;
+  }
+  
+  .hero-image-container::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-accent-emerald/20 to-accent-blue/20 z-10 pointer-events-none;
+  }
+  
+  /* Enhanced button styles for hero */
+  .btn-hero-primary {
+    @apply bg-accent-emerald hover:bg-accent-emerald-hover text-white 
+           border-2 border-accent-emerald hover:border-accent-emerald-hover
+           px-6 py-3 sm:px-8 sm:py-4 
+           text-base sm:text-lg font-medium
+           rounded-lg transition-all duration-200
+           touch-manipulation font-sans w-full sm:w-auto
+           shadow-lg hover:shadow-xl transform hover:scale-105;
+  }
+  
+  .btn-hero-secondary {
+    @apply bg-primary-bg hover:bg-foreground text-foreground hover:text-primary-bg
+           border-2 border-accent-emerald hover:border-accent-emerald
+           px-6 py-3 sm:px-8 sm:py-4 
+           text-base sm:text-lg font-medium
+           rounded-lg transition-all duration-200
+           touch-manipulation font-sans
+           shadow-lg hover:shadow-xl transform hover:scale-105;
+  }
+}
+
+@layer utilities {
+  /* Animation delays */
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-500 { animation-delay: 0.5s; }
+}
+
+@layer components {
+  /* Navbar specific animations */
+  .animate-stagger > * {
+    animation-fill-mode: both;
+  }
+  
+  .animate-stagger > *:nth-child(1) { animation-delay: 0.1s; }
+  .animate-stagger > *:nth-child(2) { animation-delay: 0.2s; }
+  .animate-stagger > *:nth-child(3) { animation-delay: 0.3s; }
+  .animate-stagger > *:nth-child(4) { animation-delay: 0.4s; }
+  .animate-stagger > *:nth-child(5) { animation-delay: 0.5s; }
+}
+
