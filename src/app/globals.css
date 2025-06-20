@@ -95,7 +95,7 @@
   }
   
   .container-custom {
-    @apply max-w-7xl mx-auto w-full;
+    @apply max-w-full mx-auto w-full;
   }
   
   /* Grid Systems - Responsive */

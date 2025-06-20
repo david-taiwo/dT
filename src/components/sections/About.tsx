@@ -1,19 +1,23 @@
 import React from 'react'
+import PaletteIcon from '@mui/icons-material/Palette';
+import BuildIcon from '@mui/icons-material/Build';
+import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
+
 
 const About = () => {
   // Stats data
   const stats = [
-    { number: '3+', label: 'Years Experience' },
-    { number: '50+', label: 'Projects Completed' },
+    { number: '1+', label: 'Years Experience' },
+    { number: '10+', label: 'Projects Completed' },
     { number: '30+', label: 'Happy Clients' },
     { number: '24/7', label: 'Support Available' }
   ]
 
   // Skills/Technologies
   const technologies = [
-    { name: 'React', level: 70 },
-    { name: 'Next.js', level: 90 },
-    { name: 'TypeScript', level: 85 },
+    { name: 'React', level: 95 },
+    { name: 'Next.js', level: 95 },
+    { name: 'TypeScript', level: 95 },
     { name: 'Node.js', level: 80 },
     { name: 'Tailwind CSS', level: 95 },
     { name: 'MongoDB', level: 75 }
@@ -21,21 +25,21 @@ const About = () => {
 
   // Services offered
   const services = [
-    {
-      title: 'Frontend Development',
-      description: 'Creating responsive, interactive user interfaces with modern frameworks',
-      icon: '🎨'
-    },
-    {
-      title: 'Backend Development', 
-      description: 'Building robust APIs and server-side applications',
-      icon: '⚙️'
-    },
-    {
-      title: 'Full Stack Solutions',
-      description: 'End-to-end web application development and deployment',
-      icon: '🚀'
-    }
+     {
+    title: 'Frontend Development',
+    description: 'Creating responsive, interactive user interfaces with modern frameworks',
+    icon: <PaletteIcon fontSize="large" />
+  },
+  {
+    title: 'Backend Development', 
+    description: 'Building robust APIs and server-side applications',
+    icon: <BuildIcon fontSize="large" />
+  },
+  {
+    title: 'Full Stack Solutions',
+    description: 'End-to-end web application development and deployment',
+    icon: <RocketLaunchIcon fontSize="large" />
+  }
   ]
 
   return (
@@ -149,7 +153,7 @@ const About = () => {
                 className="card-hover text-center p-6 animate-slide-up"
                 style={{ animationDelay: `${0.2 * index}s` }}
               >
-                <div className="text-4xl mb-4">{service.icon}</div>
+                <div className="text-4xl mb-4 text-accent-emerald">{service.icon}</div>
                 <h4 className="text-xl font-semibold text-foreground mb-3">
                   {service.title}
                 </h4>

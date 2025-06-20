@@ -4,7 +4,7 @@ import profileImg from '@/assets/profileImg.png'
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center pt-20">
+    <div className="min-h-screen flex items-center justify-center mt-20 ">
       <div className="container-custom">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8 lg:gap-12 xl:gap-16">
           

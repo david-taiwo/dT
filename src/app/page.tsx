@@ -27,7 +27,7 @@ export default function Home() {
       <section 
         id="about" 
         className="bg-surface-card border-t border-surface-border
-                   section-padding"
+                   "
       >
         <div className="container-custom">
           <About />
