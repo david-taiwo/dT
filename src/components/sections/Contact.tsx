@@ -74,10 +74,10 @@ const Contact = () => {
       <div className="container-custom">
         
         {/* Section Header */}
-        <div className="text-center mb-12 md:mb-16 lg:mb-20">
-          <h2 className="heading-secondary mb-4 animate-fade-in">
-            Let's <span className="text-accent-emerald">Connect</span>
-          </h2>
+        <div className="text-center mb-10 md:mb-12 lg:mb-12">
+          <h3 className="heading-secondary mb-4 animate-fade-in">
+            Let&#39;s <span className="text-accent-emerald">Connect</span>
+          </h3>
           <div className="w-20 h-1 bg-accent-emerald mx-auto rounded-full animate-slide-up"></div>
         </div>
 
@@ -94,17 +94,17 @@ const Contact = () => {
               </h3>
               
               {/* Paragraph */}
-              <p className="text-muted text-lg md:text-xl leading-relaxed max-w-lg mx-auto text-start">
+              <p className="text-muted text-lg md:text-xl leading-relaxed max-w-lg mx-auto text-justify">
                 Great software starts with clear intent and good communication.
-                Have an idea in mind, or a bug that resists resolution? Let's connect.
-                Whether it's building scalable systems, refining product flows, or architecting clean APIs I'm here for it.
+                Have an idea in mind, or a bug that resists resolution? Let&#39;s connect.
+                Whether it&#39;s building scalable systems, refining product flows, or architecting clean APIs I&#39;m here for it.
                 Every project begins with a message, a brief line of code in the greater function.
                 Reach out for collaboration, consultation, or simply to exchange ideas across the wire.
               </p>
             </div>
 
             {/* Social Media Icons */}
-            <div className="flex justify-center gap-4 md:gap-6">
+            <div className="flex justify-center gap-4 md:gap-6 p-6">
               {socialLinks.map((social, index) => (
                 <a
                   key={social.name}

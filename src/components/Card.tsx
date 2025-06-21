@@ -46,13 +46,15 @@ const Card: React.FC<CardProps> = ({
         {/* Image Section */}
         {image && (
           <div className="relative w-full md:w-2/5 h-64 md:h-80 lg:h-96 overflow-hidden rounded-t-lg md:rounded-l-lg md:rounded-tr-none">
-            <Image
-              src={image}
-              alt={imageAlt}
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-110"
-              sizes="(max-width: 768px) 100vw, 40vw"
-            />
+            <div className='p-40'>
+              <Image
+                src={image}
+                alt={imageAlt}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                // sizes="(max-width: 768px) 100vw, 40vw"
+              />
+            </div>
             
             {/* Overlay */}
             <div className="absolute inset-0 bg-primary-bg/20 group-hover:bg-primary-bg/10 transition-colors duration-300"></div>

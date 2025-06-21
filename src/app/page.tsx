@@ -3,9 +3,9 @@ import Hero from '@/components/sections/Hero'
 import About from '@/components/sections/About'
 import Projects from '@/components/sections/Projects'
 import Contact from '@/components/sections/Contact'
-import Blog from '@/components/sections/Blog'
+// import Blog from '@/components/sections/Blog'
 import Footer from '@/components/Footer'
-import Skills from '@/components/sections/Skills'
+// import Skills from '@/components/sections/Skills'
 
 export default function Home() {
   return (
@@ -34,15 +34,6 @@ export default function Home() {
         </div>
       </section>
       
-      {/* Skills Section - Responsive grid ready */}
-      <section 
-        id="skills" 
-        className="bg-background section-padding"
-      >
-        <div className="container-custom">
-          <Skills />
-        </div>
-      </section>
       
       {/* Projects Section - Responsive cards ready */}
       <section 
@@ -54,15 +45,7 @@ export default function Home() {
         </div>
       </section>
       
-      {/* Blog Section - Responsive grid ready */}
-      <section 
-        id="blog" 
-        className="bg-background section-padding"
-      >
-        <div className="container-custom">
-          <Blog />
-        </div>
-      </section>
+
       
       {/* Contact Section - Responsive form ready */}
       <section 

@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
-import profileImg from '@/assets/profileImg.png'
+import assets from '@/assets/assets'
 
 const Hero = () => {
   return (
-    <div className="min-h-90vh flex items-center justify-center mt-15 pt-20 md:pt-12">
+    <div className="min-h-50vh md:min-h-90vh flex items-center justify-center mt-15 pt-20 md:pt-12">
       <div className="container-custom">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-4 lg:gap-4 xl:gap-4">
  
@@ -12,10 +12,10 @@ const Hero = () => {
           <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6 md:space-y-8">
             
             {/* Text Section */}
-            <div className="space-y-4 md:space-y-6 pt-8">
+            <div className="space-y-1 md:space-y-6 pt-8">
               {/* Main Heading */}
               <h1 className="text-3xl text-center md:text-left sm:text-5xl md:text-4xl lg:text-7xl xl:text-[6rem] font-bold text-foreground leading-tight animate-fade-in">
-                Hi, I'm David a, {' '}
+                Hi, I&#39;m David a, {' '}
                 <span className="text-accent-emerald">
                   Freelance Developer.
                 </span>
@@ -60,7 +60,7 @@ const Hero = () => {
               <div className="w-full h-full rounded-[3rem] sm:rounded-[4rem] md:rounded-[5rem] lg:rounded-[6rem] overflow-hidden shadow-2xl ">
               {/* Profile Image */}                 
                <Image
-                  src={profileImg}
+                  src={assets.profileImg}
                   alt="David Taiwo - Freelance Developer"
                   fill
                   className="object-cover object-center border-4 md:border-6 xl:border-8 border-accent-emerald rounded-[100px_100px_50px_50px]"

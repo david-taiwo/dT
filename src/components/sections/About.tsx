@@ -43,14 +43,14 @@ const About = () => {
   ]
 
   return (
-    <div className="py-4 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-12">
+    <div className="section-padding">
       <div className="container-custom">
         
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16 lg:mb-20">
-          <h2 className="heading-secondary mb-4 animate-fade-in">
+          <h3 className="heading-secondary mb-4 animate-fade-in">
             About <span className="text-accent-emerald">Me</span>
-          </h2>
+          </h3>
           <div className="w-20 h-1 bg-accent-emerald mx-auto rounded-full animate-slide-up"></div>
         </div>
 
@@ -63,9 +63,9 @@ const About = () => {
               Passionate Developer & Problem Solver
             </h3>
             
-            <div className="space-y-4 text-muted leading-relaxed text-justify">
+            <div className="space-y-4 text-muted leading-relaxed text-start">
               <p>
-                I'm a dedicated freelance developer with a passion for creating 
+                I&#39;m a dedicated freelance developer with a passion for creating 
                 exceptional digital experiences. With over 3 years of experience 
                 in web development, I specialize in building modern, scalable 
                 applications that solve real-world problems.
@@ -84,7 +84,7 @@ const About = () => {
             {/* CTA Button */}
             <div className="pt-2 md:pt-4 flex justify-center md:justify-start">
               <button className="bg-accent-emerald hover:bg-accent-emerald-hover text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
-                Let's Work Together
+                Let&#39;s Work Together
               </button>
             </div>
           </div>

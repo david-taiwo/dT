@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../Card'
-import projectImg1 from '@/assets/projectImg1.png'
+import assets from '@/assets/assets'
+  
 
 
 
@@ -10,7 +11,7 @@ const Projects = () => {
     {
       title: 'Oreva',
       description: 'A full-stack e-commerce solution built with Next.js, featuring user authentication, payment processing, and admin dashboard.',
-      image: projectImg1,
+      image: assets.projectImg1,
       link: '/projects/ecommerce',
       tags: ['Next.js', 'TypeScript', 'Stripe', 'MongoDB'],
       type: 'project' as const
@@ -18,7 +19,7 @@ const Projects = () => {
     {
       title: 'Workit',
       description: 'A productivity app built with React and TypeScript, featuring task management, time tracking, and collaboration tools.',
-      image: projectImg1,
+      image: assets.projectImg1,
       link: '/projects/workit',
       tags: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
       type: 'project' as const
@@ -26,7 +27,7 @@ const Projects = () => {
     {
       title: 'Mike Portfolio',
       description: 'A personal portfolio website built with Next.js and TypeScript, showcasing my projects and skills.',
-      image: projectImg1,
+      image: assets.projectImg1,
       link: '/projects/mike-portfolio',
       tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
       type: 'project' as const
@@ -39,13 +40,13 @@ const Projects = () => {
       <div className="section-padding">
       <div className="container-custom">
         <div className="text-center mb-12 md:mb-16 lg:mb-20">
-          <h2 className="heading-secondary mb-4 animate-fade-in">
+          <h3 className="heading-secondary mb-4 animate-fade-in">
             Featured <span className="text-accent-emerald">Projects</span>
-          </h2>
-          <p className="text-muted text-lg md:text-xl max-w-2xl mx-auto mb-6">
+          </h3>
+          <div className="w-20 h-1 bg-accent-emerald mx-auto rounded-full animate-slide-up"></div>
+          <p className="text-muted md:text-xl max-w-2xl mx-auto mb-6 pt-5">
             Here are some of my recent projects that showcase my skills and passion for creating exceptional digital experiences.
           </p>
-          <div className="w-20 h-1 bg-accent-emerald mx-auto rounded-full animate-slide-up"></div>
         </div>
 
         {/* Project Cards Display */}

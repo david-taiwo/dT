@@ -50,9 +50,9 @@ const Navbar = () => {
             {/* Logo Section */}
             <div className="flex items-center space-x-3">
               <div className="w-8 h-8 md:w-10 md:h-10 bg-accent-emerald rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg md:text-xl">D</span>
+                <span className="text-white font-bold text-lg md:text-xl">dt</span>
               </div>
-              <span className="text-foreground font-bold text-lg md:text-xl lg:text-2xl">
+              <span className="text-foreground font-bold text-lg md:text-xl lg:text-2xl  md:block">
                 davidTaiwo
               </span>
             </div>
