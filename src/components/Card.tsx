@@ -16,6 +16,8 @@ interface CardProps {
   type?: 'project' | 'blog' | 'service'
   className?: string
   variant?: 'default' | 'featured'
+  style?: React.CSSProperties 
+
 }
 
 const Card: React.FC<CardProps> = ({
@@ -28,7 +30,7 @@ const Card: React.FC<CardProps> = ({
   tags = [],
   date,
   author,
-  type = 'project',
+  // type = 'project',
   className = '',
   variant = 'default'
 }) => {
