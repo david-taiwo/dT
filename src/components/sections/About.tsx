@@ -43,7 +43,7 @@ const About = () => {
   ]
 
   return (
-    <div className="section-padding">
+    <div className="py-4 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-12">
       <div className="container-custom">
         
         {/* Section Header */}
@@ -59,11 +59,11 @@ const About = () => {
           
           {/* Text Content */}
           <div className="space-y-6 animate-slide-up">
-            <h3 className="heading-tertiary text-accent-blue">
+            <h3 className="heading-tertiary text-accent-blue text-center md:text-left">
               Passionate Developer & Problem Solver
             </h3>
             
-            <div className="space-y-4 text-muted leading-relaxed">
+            <div className="space-y-4 text-muted leading-relaxed text-justify">
               <p>
                 I'm a dedicated freelance developer with a passion for creating 
                 exceptional digital experiences. With over 3 years of experience 
@@ -78,15 +78,11 @@ const About = () => {
                 technology to transform businesses and improve lives.
               </p>
               
-              <p>
-                When I'm not coding, you'll find me exploring new technologies, 
-                contributing to open-source projects, or sharing knowledge with 
-                the developer community through my blog.
-              </p>
+             
             </div>
 
             {/* CTA Button */}
-            <div className="pt-4">
+            <div className="pt-2 md:pt-4 flex justify-center md:justify-start">
               <button className="bg-accent-emerald hover:bg-accent-emerald-hover text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
                 Let's Work Together
               </button>

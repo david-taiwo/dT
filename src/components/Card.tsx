@@ -1,11 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import type { StaticImageData } from 'next/image'
 
 interface CardProps {
   title: string
   description: string
-  image?: string
+  image?: string | StaticImageData
   imageAlt?: string
   link?: string
   linkText?: string
